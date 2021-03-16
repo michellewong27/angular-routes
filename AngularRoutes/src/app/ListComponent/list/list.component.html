@@ -4,5 +4,5 @@
 </div>
 
 <div class="options">
-  <a [routerLink]="[/quote, author.name]" class="{{isSelected(author) && 'selected' || '' " *ngFor="let author of list" (click)=selectAuthor(author)>{{author.name}}</a>
+  <a [routerLink]="['/quote', author.name]" class="{{isSelected(author) && 'selected' || '' " *ngFor="let author of list" (click)=selectAuthor(author)>{{author.name}}</a>
 </div>

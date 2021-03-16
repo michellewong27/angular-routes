@@ -21,10 +21,11 @@ export class QuoteComponent implements OnInit {
       });
   }
 
+  //on click of btn, come here & get method SelectedAuthor from dataservice
   get(){
     if(this.dService.SelectedAuthor){
       this.quote = this.dService.SelectedAuthor.quote;
     }
   }
-
+  
 }

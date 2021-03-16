@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
-import {Author} from "../Interfaces/app.author"
+import {Author} from "../Interfaces/app.author";
+
 @Injectable({
   providedIn: 'root'
 })
+
 export class DataserviceService {
   private authors: Array<Author>;
   private sAuthor!: Author;
