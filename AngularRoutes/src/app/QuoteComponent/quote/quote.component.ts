@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {DataService} from "../../Services/data.service";
+import {DataserviceService} from "src/app/Services/dataservice.service";
 import {ActivatedRoute} from "@angular/router";
 import {map} from "rxjs/operators";
 
@@ -12,8 +12,8 @@ export class QuoteComponent implements OnInit {
 
   quote!: string;
   aname!:string;
-  
-  constructor(private dService: DataService, private route:ActivatedRoute) { }
+
+  constructor(private dService: DataserviceService, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
       this.route.params.pipe(map ( (p:any) => p["name"])).subscribe((n:any) =>{
